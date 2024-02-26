@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>About</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    .navbar{
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Oswald", sans-serif;
+      background-color: #000;
+      background-image: url('https://www.witf.io/wp-content/uploads/2020/11/iStock-1159238834-1628x1080.jpg'); /* Replace 'stars.png' with your star-like background image */
+      background-size:cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply animation to the text */
+        .animated-text {
+            animation: slideIn 1s ease-in-out;
+        }
+</style>
+<body class="pb-8 flex flex-col items-center">
+    
+        <nav class="navbar text-white px-12 py-8 animated-text border-b-2 border-white w-full flex flex-row justify-center">
+            <a href = "home" class="mx-16 text-2xl hover:text-violet-600">Home</a>
+            <a href = "about" class="mx-16 text-2xl hover:text-violet-600 text-emerald-400" >About</a>
+            <a href = "portfolio" class="mx-16 text-2xl hover:text-violet-600">Portfolio</a>
+            <a href = "game" class="mx-16 text-2xl hover:text-violet-600">Game</a>
+        </nav>
+        <div class="py-12 w-96 text-center animated-text">
+            <img src="https://i.pinimg.com/736x/cb/cb/aa/cbcbaa4de780a4a66fe06c83e325197f.jpg" class="rounded-full mb-20"/>
+            <p class="text-2xl text-white">I am Kharhyll Joy Laranio, a third-year Information Technology student in Ateneo de Davao University.</p>
+            <p class="text-2xl text-white mt-4">Isa akong nerd na laging binubully at nilalayuan ng mga kaklase ko. Kaya ginulat ko sila nung prom night kung saan inayusan ko ang sarili ko gamit ang tinatago kong kayamanan dahil isa akong anak ng mafia boss.</p>
+        </div>
+        <div class="flex justify-center animated-text">
+            <a href = "https://www.facebook.com/kjlaranio/" class="mx-11"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/640px-Facebook_logo_%28square%29.png" alt="Facebook" width="30" height="30"/></a>
+            <a href = "https://www.instagram.com/kharhyll/" class="mx-11"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1200px-Instagram-Icon.png" alt="Instagram" width="30" height="30"/></a>
+            <a href = "portfolio" class="mx-11"><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png"  alt="Discord" width="30" height="30"/></a>
+        </div>
+  
+</body>
+</html> 
