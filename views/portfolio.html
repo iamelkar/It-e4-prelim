@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
 <style>
@@ -18,11 +20,17 @@
         font-optical-sizing: auto;
         font-style: normal;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+    .desctext{
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+    font-style: normal;
+    }
     body {
       margin: 0;
       padding: 0;
-      font-family: "Oswald", sans-serif;
+      /* font-family: "Oswald", sans-serif; */
       background-color: #000;
       background-image: url('https://www.witf.io/wp-content/uploads/2020/11/iStock-1159238834-1628x1080.jpg'); /* Replace 'stars.png' with your star-like background image */
       background-size:cover;
@@ -58,25 +66,37 @@
         <a href = "portfolio" class="mx-16 text-2xl hover:text-violet-600 text-emerald-400">Portfolio</a>
         <a href = "game" class="mx-16 text-2xl hover:text-violet-600">Game</a>
     </nav>
-    <div class="content animated-text justify-center flex flex-col items-center py-12">
-        <p class="text-4xl font-bold mb-4">MY WORKS</p> 
+    <div class="navbar content animated-text justify-center flex flex-col items-center py-12">
+        <p class="text-4xl font-bold mb-4">MY PROJECT</p> 
         <hr class="w-full"/>
     </div>
-    <div class="px-4 flex flex-row justify-between w-full flex-wrap gap-4">
-        <a href="https://github.com/iamelkar/elec3-blog-app.git" class="aspect-square w-[48%] bg-red-500"></a>
-        <a href="#" class=" aspect-square w-[48%] bg-red-500"></a>
+    <div class="w-96 px-4 flex flex-row justify-center items-center flex-wrap gap-4 animated-text">
+        <a href="https://github.com/iamelkar/my-blog-final.git" class="bg-white">
+            <img src="https://cdn.dribbble.com/users/2212936/screenshots/6170689/media/cfefe47622654dad65b8745c5d639aec.png?resize=400x0"/>
+            <p class="text-center text-lg desctext font-extrabold">Simple Blog App</p>
+            <p class="text-justify p-2">With CRUD functionality, this app utilizes NextJS for frontend and backend, Prisma ORM for database management, and Sqlite3 for database storage.</p></a>
+        <!-- <a href="#" class=" aspect-square w-[48%] bg-red-500"></a> -->
     </div>
-    <div class="content animated-text justify-center flex flex-col items-center pt-20 pb-10">
+    <div class="content navbar animate__animated justify-center flex flex-col items-center pt-20 pb-10">
         <p class="text-4xl font-bold mb-4">MY WORK EXPERIENCE</p> 
         <hr class="w-full"/>
     </div>
-    <div class="px-4 flex flex-col justify-center items-center w-full">
-        <p class="text-white text-bold text-lg">Virtual Assistant</p>
-        <p>IOTAFIX</p>
-        <p class="">2 Months</p>
+    <div class="px-4 pb-8 flex flex-col justify-center items-center w-full">
+        <div class="w-1/2">
+            <p class="text-white text-bold text-lg underline underline-offset-4">Virtual Assistant</p>
+        <p class="pt-2 text-white">IOTAFIX</p>
+        <p class=" text-white">February 2022 - April 2022</p>
+        <p class=" text-white pt-2">Brief description:</p>
+        <p class="text-white text-justify">As a virtual assistant, I specialize in providing personalized scheduling support to my clients. One of my key responsibilities is managing my client's daily appointments efficiently, ensuring that their calendar remains organized and optimized for productivity. Additionally, I play a crucial role in coordinating the scheduling of their trucking service, ensuring timely deliveries and efficient logistics. With meticulous attention to detail and effective communication skills, I streamline the scheduling process, allowing my client to focus on their core business activities with peace of mind.</p>
+        </div>>
 
-        <p class="">Backend Support - JNTrading</p>
-        <p class="">11 months</p>
+        <div class="w-1/2">
+            <p class="text-white text-bold text-lg underline underline-offset-4">Non-voice Customer Support</p>
+        <p class="pt-2 text-white">JNTrading Corp</p>
+        <p class=" text-white">March 2023 - Present</p>
+        <p class=" text-white pt-2">Brief description:</p>
+        <p class="text-white text-justify">As a customer support representative in an online casino setting, I am the frontline liaison between the players and the platform, providing exceptional assistance and resolving inquiries promptly. My role involves addressing a wide range of player concerns, including account inquiries, gameplay assistance, and technical support. With a deep understanding of the casino's policies, procedures, and gaming offerings, I strive to ensure a seamless and enjoyable experience for every player. Whether it's troubleshooting technical issues, processing withdrawals, or providing guidance on responsible gaming practices, I am committed to delivering top-notch service and fostering a positive atmosphere within the online casino community.</p>
+        </div>
     </div>
 </body>
 </html>
