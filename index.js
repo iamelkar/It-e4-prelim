@@ -51,6 +51,14 @@ const server = http.createServer((req, res) => {
         myUrl += 'portfolio.html'
         res.statusCode = 200
     }
+    else if(req.url == '/tetris'){
+        myUrl += 'tetris.html'
+        res.statusCode = 200
+    }
+    else if(req.url == '/tictactoe'){
+        myUrl += 'tictactoe.html'
+        res.statusCode = 200
+    }
     else{
         myUrl += 'error.html'
         res.statusCode = 404
