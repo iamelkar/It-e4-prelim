@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 
+app.set('view engine', 'ejs')
 const port = 8000;
 
 app.use((req, res, next) => {
@@ -16,7 +17,11 @@ app.get('/', function (req, res) {
 })
 
 app.get('/about', function (req, res) {
-    res.sendFile('./views/about.html', {root: __dirname});
+    // res.sendFile('./views/about.html', {root: __dirname});
+    res.render('about', {name: "Kharhyll Joy Laranio", 
+                         year: "third-year",
+                         course: "Information Technology",
+                         school: "Ateneo de Davao University"})
 })
 
 app.get('/game', function (req, res) {
