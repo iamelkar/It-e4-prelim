@@ -4,6 +4,8 @@ const app = express()
 app.set('view engine', 'ejs')
 const port = 8000;
 
+const pageData = require('./data');
+
 app.use((req, res, next) => {
     console.log('Request made')
     console.log(`Host: ${req.hostname}`)
@@ -13,7 +15,7 @@ app.use((req, res, next) => {
 })
 
 app.get('/', function (req, res) {
-  res.sendFile('./views/home.html', {root: __dirname});
+    res.render('home', { homedata: pageData.homePageData});
 })
 
 app.get('/about', function (req, res) {
@@ -21,15 +23,16 @@ app.get('/about', function (req, res) {
     res.render('about', {name: "Kharhyll Joy Laranio", 
                          year: "third-year",
                          course: "Information Technology",
-                         school: "Ateneo de Davao University"})
+                         school: "Ateneo de Davao University",
+                        aboutdata: pageData.aboutPageData})
 })
 
 app.get('/game', function (req, res) {
-    res.sendFile('./views/game.html', {root: __dirname});
+    res.render('game', { gamedata: pageData.gamePageData});
 })
 
 app.get('/portfolio', function (req, res) {
-    res.sendFile('./views/portfolio.html', {root: __dirname});
+    res.render('portfolio', { portdata: pageData.portfolioPageData});
 })
 
 app.get('/tetris', function (req, res) {
